@@ -6,7 +6,7 @@ int main(){
 	bool loop = true;
 	cout << "Please enter your User Name: " << endl;
 	
-	getline(cin, UserName);
+	cin >> UserName;
 
 	do{
 		cin.ignore();
@@ -38,14 +38,12 @@ int main(){
 				loop = false;
 			}
 			else{
-				cout << "ERROR: Must enter a valid number (1 - 5)" << endl;
+				cout << "--> ERROR: Must enter a valid number (1 - 5)" << endl;
 			}
 		}
 		else {
-			cout << "Must enter a number." << endl;
-			userNum = 0;
+			cout << "--> ERROR: Must enter a number." << endl;
 		}
-		cin.ignore();
 		cin.clear();
 	} while (loop);
 
